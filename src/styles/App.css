@@ -1,0 +1,38 @@
+
+.app-wrapper {
+    padding: 0px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 15px var(--blue);
+}
+.app-container {
+    height: 100vh;
+}
+.icon-container {
+    --icon-size: 30px;
+
+    width: var(--icon-size);
+    height: var(--icon-size);
+
+    cursor: pointer;
+}
+.icon-container>img {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width: 768px){
+    .app-wrapper, .contact-list  {
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 992px){
+    .app-wrapper, .contact-list  {
+        width: 60vw;
+    }
+}
+@media screen and (min-width: 1200px){
+    .app-wrapper, .contact-list  {
+        width: 50vw;
+    }
+}

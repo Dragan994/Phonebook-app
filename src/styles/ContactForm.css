@@ -1,0 +1,47 @@
+.contact-form-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    
+}
+.contact-form {
+    padding: 15px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    transition: ease  0.5s;
+
+}
+.go-up {
+    
+    transform: translateY(-100%);
+}
+.contact-form>header {
+    display: flex;
+    justify-content: space-between;
+}
+.go-down {
+    transform: translateY(0%);
+}
+.hidden {
+    display: none;
+}
+
+.showForm-btn{
+    --corner-position: 40px;
+
+    position: absolute;
+    top: -80px;
+    right: var(--corner-position);
+
+    --icon-size-m: 50px;
+    width: var(--icon-size-m);
+    height: var(--icon-size-m);
+
+    cursor: pointer;
+
+    background: var(--blue);
+    padding: 10px;
+    border-radius: 50%;
+}
